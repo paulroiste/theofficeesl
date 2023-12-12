@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Office English</title>
+    <style>
+        @font-face {
+            font-family: 'American Typewriter Regular';
+            src: url('American Typewriter Regular.ttf') format('truetype');
+        }
+
+        /* * {
+            font-family: 'American Typewriter Regular';
+        } */
+
+        body {
+            font-family: 'American Typewriter Regular', serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav a {
+            font-family: monospace;
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .about {
+            height: 100px;
+            font-size: 18px;
+            font-style: italic;
+            line-height: 1.5;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            width: 387.25px;
+            height: 252.48px !important;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .image-box {
+            width: calc(25% - 20px);
+            margin-bottom: 50px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .image-box:hover {
+            transform: scale(1.05);
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .caption {
+            font-family: monospace;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px;
+            background-color: #fff;
+            text-align: center;
+        }
+        
+        .space-between {
+            margin-bottom:5px;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            font-family: 'sans-serif';
+        }
+
+        .unavailable {
+            position: relative;
+        }
+
+        .unavailable::before {
+            content: "Coming soon";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: monospace;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff; /* Adjust text color as needed */
+            background-color: rgba(128, 128, 128, 0.5); /* Adjust the opacity as needed */
+            padding: 15px;
+            text-align: center;
+            z-index: 1;
+            pointer-events: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .image-box {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Office English</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="https://johnroiste.github.io/grid-game/grid-game/" target="_blank">Game</a>
+    </nav>
+
+    <section>
+        <div class="about">This is a website I made for office lover ESL Teachers looking for a place to get lesson plans for their favourite scenes from the office.
+            Click on the links below the captions to download the lesson plans and workseets. If you like the website please consider
+            <a href="https://www.buymeacoffee.com/johnroiste" target="_blank">buying me a coffee</a>. Enjoy!
+        </div>
+        <div class="image-container">
+            <!-- Image Box 1 -->
+            <div class="image-box">
+                <a href="https://www.youtube.com/watch?v=Vmb1tqYqyII" target="_blank">
+                <img class="image" src="emergency.jpg" alt="Image 1">
+                </a>
+                <div class="caption">First aid </br>
+                    <a class = "space-between" href="FirstAid.docx">Lesson plan</a>
+                    <a href="First aid Student worksheet.docx">Worksheet</a>
+                </div>
+                <div></div>
+            </div>
+            
+            <!-- Image Box 2 -->
+            <div class="image-box">
+                <a href="https://www.youtube.com/watch?v=19ulSNSRKyU" target="_blank">
+                <img class="image" src="Christmas.jpeg" alt="Image 2">
+                </a>
+                <div class="caption">Christmas</br>
+                    <a class = "space-between" href="Yankee Swap Lesson plan.docx">Lesson plan</a>
+                    <a href="Yankee swap Student Worksheet.docx">Worksheet</a>
+                </div>
+            </div>
+            
+            <!-- Image Box 3 -->
+            <div class="image-box">
+                <a href="https://www.youtube.com/watch?v=gO8N3L_aERg" target="_blank">
+                <img class="image" src="download.jpg" alt="Image 3">
+                </a>
+                <div class="caption">Fire drill
+                </br>
+                <a class = "space-between" href="Fire Drill Teachers.docx">Lesson plan</a>
+                <a href="Fire Drill Student worksheet.docx">Worksheet</a>
+                </div>
+            </div>
+            
+            <!-- Image Box 4 -->
+            <div class="image-box unavailable">
+                <a href="#" target="_blank">
+                <img class="image" src="whomever.jpg" alt="Image 4">
+                <p></p>
+                </a>
+                <div class="caption">Grammar</div>
+            </div>
+
+          
+                <!-- Image Box 5 -->
+                <div class="image-box">
+                    <a href="https://www.youtube.com/" target="_blank">
+                    <img class="image" src="michael.jpg" alt="Image 5">
+                    </a>
+                    <div class="caption">Mental health</br>
+                        <a class = "space-between" href="Mental health.docx">Lesson plan</a>
+                        <a href="First aid Student workesheet.docx">Worksheet</a></div>
+                </div>
+                
+                <!-- Image Box 2 -->
+                <div class="image-box unavailable">
+                    <a href="#" target="_blank">
+                    <img class="image" src="newyear.jpg" alt="Image 6">
+                    </a>
+                    <div class="caption">New Years Resolutions</div>
+                </div>
+                
+                <!-- Image Box 3 -->
+                <div class="image-box unavailable">
+                    <a href="#" target="_blank">
+                    <img class="image" src="download.jpg" alt="Image 3">
+                    </a>
+                    <div class="caption">Fire drill</div>
+                </div>
+                
+                <!-- Image Box 4 -->
+                <div class="image-box unavailable">
+                    <a href="#" target="_blank">
+                    <img class="image" src="whomever.jpg" alt="Image 4">
+                    </a>
+                    <div class="caption">Caption 4</div>
+                </div>
+            
+            <!-- Add more image boxes as needed -->
+        </div>
+    </section>
+
+</body>
+</html>
